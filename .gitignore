@@ -130,3 +130,5 @@ dmypy.json
 .pyre/
 
 /audio_analize/media/
+.DS_Store
+*/.DS_Store
