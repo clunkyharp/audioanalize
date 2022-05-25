@@ -20,10 +20,10 @@ matplotlib.use("macOSX")
 class Audio(models.Model):
     title = models.CharField(max_length=30, null=True)
     artist = models.CharField(max_length=60, null=True)
-    audio = models.FileField(upload_to='Users/amir/Desktop/audioanalize/audiofiles')
+    audio = models.FileField(upload_to='Users/amir/Documents/audioanalize/audio_analize/media')
     result = models.FloatField(max_length=60, blank=True)
     resultsec = models.CharField(max_length=60, blank=True)
-    image = models.ImageField(upload_to='Users/amir/Desktop/audioanalize/audiofiles', blank=True)
+    image = models.ImageField(upload_to='Users/amir/Documents/audioanalize/audio_analize/media', blank=True)
     
     def __str__(self):
         return "%s" % self.artist
